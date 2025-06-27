@@ -1,15 +1,7 @@
-:root {
-  --color-primario: #4361ee;
-  --color-secundario: #3a0ca3;
-  --color-fondo: #e0e7ff; 
-  --color-texto: #2b2d42;
-  --color-destacado: #f72585;
-}
-
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(135deg, var(--color-fondo) 60%, #b5179e 100%);
-  color: var(--color-texto);
+  background: #e0e7ff;
+  color: #2b2d42;
   margin: 0;
   padding: 20px;
 }
@@ -32,16 +24,13 @@ h1, h2 {
 }
 
 header {
-  background: none;
-  border-radius: 0;
   margin-bottom: 30px;
-  padding: 0 0 10px 0;
+  padding-bottom: 10px;
   border-bottom: 1px solid #e9ecef;
 }
 
 header h2 {
   color: #222831;
-  text-shadow: none;
   font-weight: 600;
   font-size: 2rem;
   margin: 0;
@@ -60,10 +49,10 @@ header h2 {
   font-weight: 600;
   margin-bottom: 8px;
   display: block;
-  color: var(--color-secundario);
+  color: #3a0ca3;
 }
 
-.form-control, .form-select {
+.form-control {
   width: 100%;
   padding: 12px;
   margin-bottom: 20px;
@@ -73,8 +62,8 @@ header h2 {
   transition: border-color 0.3s;
 }
 
-.form-control:focus, .form-select:focus {
-  border-color: var(--color-primario);
+.form-control:focus {
+  border-color: #4361ee;
   outline: none;
   box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.2);
 }
@@ -89,25 +78,13 @@ header h2 {
 }
 
 .btn-primary {
-  background-color: var(--color-primario);
+  background-color: #4361ee;
   color: white;
 }
 
 .btn-primary:hover {
-  background-color: var(--color-secundario);
-  transform: translateY(-2px);
+  background-color: #3a0ca3;
 }
-
-.btn-warning {
-  background-color: #ff9e00;
-  color: white;
-}
-
-.btn-danger {
-  background-color: var(--color-destacado);
-  color: white;
-}
-
 
 #listaEstudiantes {
   display: flex;
@@ -123,7 +100,6 @@ header h2 {
   border-radius: 14px;
   padding: 28px 32px 22px 32px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-  transition: transform 0.3s, box-shadow 0.3s;
   font-size: 1.08rem;
   font-weight: 500;
   color: #232323;
@@ -131,20 +107,18 @@ header h2 {
   min-width: 300px;
   min-height: 140px;
   margin: 0 auto;
-  transform: none;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
 .card:hover {
-  transform: scale(1.03);
   box-shadow: 0 12px 28px rgba(0,0,0,0.13);
 }
 
 .card h5 {
   margin: 0 0 14px 0;
-  color: var(--color-secundario);
+  color: #3a0ca3;
   font-size: 1.18rem;
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -156,28 +130,6 @@ header h2 {
   font-size: 1.08rem;
   font-weight: 500;
   line-height: 1.5;
-}
-
-.card p span {
-  font-weight: 700;
-  color: #222831;
-}
-
-
-@media (max-width: 768px) {
-  .container {
-    padding: 20px;
-  }
-  #listaEstudiantes {
-    grid-template-columns: 1fr;
-  }
-}
-
-.header {
-  text-align: center;
-  padding: 20px 0;
-  border-bottom: 1px solid #e9ecef;
-  margin-bottom: 30px;
 }
 
 .footer {

@@ -1,0 +1,189 @@
+:root {
+  --color-primario: #4361ee;
+  --color-secundario: #3a0ca3;
+  --color-fondo: #e0e7ff; 
+  --color-texto: #2b2d42;
+  --color-destacado: #f72585;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, var(--color-fondo) 60%, #b5179e 100%);
+  color: var(--color-texto);
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  text-align: center;
+  color: #222831;
+  margin-bottom: 30px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+header {
+  background: none;
+  border-radius: 0;
+  margin-bottom: 30px;
+  padding: 0 0 10px 0;
+  border-bottom: 1px solid #e9ecef;
+}
+
+header h2 {
+  color: #222831;
+  text-shadow: none;
+  font-weight: 600;
+  font-size: 2rem;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+#formEstudiante {
+  background: #f1f3f8;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.form-label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: block;
+  color: var(--color-secundario);
+}
+
+.form-control, .form-select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: var(--color-primario);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.2);
+}
+
+.btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-primary {
+  background-color: var(--color-primario);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-secundario);
+  transform: translateY(-2px);
+}
+
+.btn-warning {
+  background-color: #ff9e00;
+  color: white;
+}
+
+.btn-danger {
+  background-color: var(--color-destacado);
+  color: white;
+}
+
+
+#listaEstudiantes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  width: 100%;
+}
+
+.card {
+  background: white;
+  border: 1px solid #e9ecef;
+  border-radius: 14px;
+  padding: 28px 32px 22px 32px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+  font-size: 1.08rem;
+  font-weight: 500;
+  color: #232323;
+  max-width: 350px;
+  min-width: 300px;
+  min-height: 140px;
+  margin: 0 auto;
+  transform: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.13);
+}
+
+.card h5 {
+  margin: 0 0 14px 0;
+  color: var(--color-secundario);
+  font-size: 1.18rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.card p {
+  margin: 8px 0;
+  color: #232323;
+  font-size: 1.08rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.card p span {
+  font-weight: 700;
+  color: #222831;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+  #listaEstudiantes {
+    grid-template-columns: 1fr;
+  }
+}
+
+.header {
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #e9ecef;
+  margin-bottom: 30px;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  color: #6c757d;
+  font-size: 14px;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestión de Estudiantes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</head>
+<body class="container">
+  <header>
+    <div class="text-center">
+      <h2>Gestión de Estudiantes</h2>
+    </div>
+  </header>
+  <main>
+    <section class="row">
+      <form id="formEstudiante" class="col-md-6">
+        <fieldset>
+          <legend>Formulario Estudiante</legend>
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" class="form-control" placeholder="Ingrese nombre">
+          </div>
+          <div class="form-group">
+            <label for="edad">Edad</label>
+            <input type="number" id="edad" class="form-control" placeholder="Ingrese edad">
+          </div>
+          <div class="form-group">
+            <label for="carrera">Carrera</label>
+            <select id="carrera" class="form-control">
+              <option value="" disabled selected>Seleccione una carrera</option>
+              <option value="informatica">Ingeniería Informática</option>
+              <option value="metalurgia">Ingeniería en Metalurgia</option>
+              <option value="astronomia">Astronomía</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="fecha">Fecha de Ingreso</label>
+            <input type="date" id="fecha" class="form-control">
+          </div>
+          <div class="form-group">
+            <label>¿Activo?</label><br>
+            <label class="radio-inline">
+              <input type="radio" name="activo" value="si" checked> Sí
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="activo" value="no"> No
+            </label>
+          </div>
+          <button type="submit" id="btnGuardar" class="btn btn-primary">GUARDAR</button>
+        </fieldset>
+      </form>
+      <div id="listaEstudiantes" class="col-md-6 row"></div>
+    </section>
+  </main>
+  <footer class="text-center mt-5">
+    <hr>
+    <p>Hecho por Benjamin Rojas y Axel Duran</p>
+  </footer>
+</body>
+</html>
